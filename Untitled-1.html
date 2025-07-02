@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    /* Header Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/hero.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 30px 80px;
+      position: relative;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero-text {
+      max-width: 550px;
+      margin-top: 50px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #00c853;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    /* Services */
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .service {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .service h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .service p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      padding: 50px 20px;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .filters button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #eee;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .filters .active,
+    .filters button:hover {
+      background-color: #00c853;
+      color: white;
+    }
+
+    .portfolio-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .portfolio-items .item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">ISUZU</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <div class="hero-text">
+      <p>WHAT IS</p>
+      <h1>YOUR BUSINESS</h1>
+      <p>With the combination of responsive design and parallax animations, this theme will provide an optimal viewing
+        experience.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="service">
+      <h3>📍 Roadmap Strategy</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="service">
+      <h3>🖥️ Web Development</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="service">
+      <h3>✔️ Reliable Results</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <div class="filters">
+      <button class="active">All</button>
+      <button>Design</button>
+      <button>Marketing</button>
+      <button>Mockup</button>
+      <button>Painting</button>
+    </div>
+
+    <div class="portfolio-items">
+      <div class="item"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Fcartoon-man&psig=AOvVaw0mbP1VxI1-hhfiahHY1vwv&ust=1749811541321000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDK7ora640DFQAAAAAdAAAAABAE
+        " alt="Portfolio 1"></div>
+      <div class="item"><img
+          src="images/item2.jpghttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dman%2BCartoon&psig=AOvVaw0SI5LgbFtbDo7O6exSvpqv&ust=1749999418888000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiNtPyV8Y0DFQAAAAAdAAAAABAE"
+          alt="Portfolio 2"></div>
+      <div class="item"><img src="images/item3.jpg" alt="Portfolio 3"></div>
+      <div class="item"><img src="images/item4.jpg" alt="Portfolio 4"></div>
+      <div class="item"><img src="images/item5.jpg" alt="Portfolio 5"></div>
+      <div class="item"><img src="images/item6.jpg" alt="Portfolio 6"></div>
+    </div>
+  </section>
+
+</body>
+
+</html>
