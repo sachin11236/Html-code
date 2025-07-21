@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #ffffffaf;
+      background: #838282af;
       color: #000000;
     }
     header {
@@ -30,7 +30,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 60px 40px;
-      background: linear-gradient(to right, #fff5eb, #e6f6ff);
+      background: linear-gradient(to right, #cbcbcb, #e6f6ff);
     }
     .hero-text {
       max-width: 50%;
@@ -51,11 +51,11 @@
       padding: 40px 20px;
     }
     .feature-box {
-      background: rgb(255, 255, 255);
+      background: rgb(196, 196, 196);
       border-radius: 15px;
       padding: 20px;
       width: 25%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 235, 55, 0.1);
     }
     .partners {
       text-align: center;
@@ -90,7 +90,7 @@
     .testimonial {
       display: flex;
       padding: 40px;
-      background: #2c2b2b;
+      background: #000000;
       color: white;
     }
     .contact {
@@ -98,8 +98,8 @@
       text-align: center;
     }
     .footer {
-      background: #514e4e;
-      color: white;
+      background: #000000;
+      color: rgb(188, 181, 181);
       padding: 40px;
       text-align: center;
     }
@@ -109,7 +109,7 @@
       margin: 10px;
     }
     .btn {
-      background: rgb(16, 201, 26);
+      background: rgb(13, 255, 25);
       color: rgb(255, 255, 255);
       padding: 10px 20px;
       border: none;
@@ -117,18 +117,47 @@
       cursor: pointer;
     }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
 
   <header>
-    <img src="/assets/arrow-share-market-progress-logo-vector.jpg" width="image-1200x700">
-    <nav>
-     <img src="/assets/demo home.png" alt="">
-      <img src="assets/about.jpg">
-      <img src="assets/servic.png">
-      <img src="assets/call.png">
-      
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
   </header>
 
   <section class="hero">
@@ -152,17 +181,17 @@
   <section class="features">
     <div class="feature-box">
       <h3>SEO Optimization</h3>
-      <img src="assets/ceo.webp" width="400">
+      <img src="/assets/ceo.webp" width="300x300">
       <p>Improve your site visibility on search engines and get more traffic.</p>
     </div>
     <div class="feature-box">
       <h3>Social Strategy</h3>
-      <img src="assets/marketing.png"width="400">
+      <img src="/assets/marketing.png"width="300x300">
       <p>Grow your online presence with effective social media strategies.</p>
     </div>
     <div class="feature-box">
       <h3>Reporting & Analytics</h3>
-      <img src="assets/reporting.jpg" width="400">
+      <img src="/assets/reporting.jpg" width="300x300">
       <p>Track, analyze and optimize your marketing performance.</p>
     </div>
   </section>
@@ -177,7 +206,7 @@
       <p>See how our clients grew their business with our help.</p>
       <button class="btn">View More</button>
     </div>
-    <img src="assets/study.jpg" alt="Case Study"><div><img src="assets/study 2.jpg"height="200"></div>
+    <img src="assets/study.jpg" width="300x300"><div><img src="assets/study 2.jpg"width="300x300"></div>
   </section>
 
   <section class="highlight">
@@ -202,7 +231,7 @@
   </section>
 
   <section class="contact">
-    <h3>egister now</h3>
+    <h3>Register now</h3>
     <input type="text" placeholder="Your Name">
     <input type="email" placeholder="Your Email">
     <button class="btn">Contact Us</button>
